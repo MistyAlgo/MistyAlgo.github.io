@@ -1,0 +1,1138 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>一些有用的链接分享，注意甄别网站安全 | 🌱​​灵感生长の笔记​​📜</title><meta name="author" content="一个未来大神"><meta name="copyright" content="一个未来大神"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="友情链接，仅仅供参考">
+<meta property="og:type" content="website">
+<meta property="og:title" content="一些有用的链接分享，注意甄别网站安全">
+<meta property="og:url" content="https://mistyalgo.github.io/link/index.html">
+<meta property="og:site_name" content="🌱​​灵感生长の笔记​​📜">
+<meta property="og:description" content="友情链接，仅仅供参考">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://mistyalgo.github.io/img/%E5%A4%B4%E5%83%8F.png">
+<meta property="article:published_time" content="2025-07-22T01:17:27.000Z">
+<meta property="article:modified_time" content="2025-07-22T13:59:04.194Z">
+<meta property="article:author" content="一个未来大神">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://mistyalgo.github.io/img/%E5%A4%B4%E5%83%8F.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/%E5%A4%B4%E5%83%8F.png"><link rel="canonical" href="https://mistyalgo.github.io/link/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":150,"languages":{"author":"作者: 一个未来大神","link":"链接: ","source":"来源: 🌱​​灵感生长の笔记​​📜","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '一些有用的链接分享，注意甄别网站安全',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><link rel="stylesheet" href="/css/custom.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/beijing.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/%E5%A4%B4%E5%83%8F.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archives"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-about"></i><span> 关于</span></a></div></div></div></div><div class="page type-link" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/img/cove_5.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">🌱​​灵感生长の笔记​​📜</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archives"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-about"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">一些有用的链接分享，注意甄别网站安全</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><div class="flink"><h2 id="糖果屋のVIP"><a href="#糖果屋のVIP" class="headerlink" title="糖果屋のVIP"></a>糖果屋のVIP</h2><div class="flink-desc">售后服务享五折优惠2333</div> <div class="flink-list">
+  <div class="flink-list-item">
+    <a href="https://akilar.top" title="Akilar" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/beijing.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="Akilar" />
+      </div>
+      <div class="flink-item-name">Akilar</div>
+      <div class="flink-item-desc" title="欢迎光临糖果屋">欢迎光临糖果屋</div>
+    </a>
+  </div></div><h2 id="技术大牛集散地-🔍"><a href="#技术大牛集散地-🔍" class="headerlink" title="技术大牛集散地 🔍"></a>技术大牛集散地 🔍</h2><div class="flink-desc">优质技术博客含金量99%</div> <div class="flink-list">
+  <div class="flink-list-item">
+    <a href="https://code-stars.net/user01" title="码农星辰" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_001.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="码农星辰" />
+      </div>
+      <div class="flink-item-name">码农星辰</div>
+      <div class="flink-item-desc" title="算法与架构的艺术">算法与架构的艺术</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://frontend-magic.com/user02" title="前端幻境" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_002.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="前端幻境" />
+      </div>
+      <div class="flink-item-name">前端幻境</div>
+      <div class="flink-item-desc" title="CSS魔法创造者">CSS魔法创造者</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://data-depths.org/user03" title="数据深渊" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_003.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="数据深渊" />
+      </div>
+      <div class="flink-item-name">数据深渊</div>
+      <div class="flink-item-desc" title="大数据洞见者">大数据洞见者</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://fullstack-notes.com/user04" title="全栈手记" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_004.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="全栈手记" />
+      </div>
+      <div class="flink-item-name">全栈手记</div>
+      <div class="flink-item-desc" title="前后端融会贯通">前后端融会贯通</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://ops-fortress.net/user05" title="运维堡垒" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_005.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="运维堡垒" />
+      </div>
+      <div class="flink-item-name">运维堡垒</div>
+      <div class="flink-item-desc" title="服务器守护者">服务器守护者</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://ai-prophet.org/user06" title="AI先知" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_006.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="AI先知" />
+      </div>
+      <div class="flink-item-name">AI先知</div>
+      <div class="flink-item-desc" title="预见人工智能未来">预见人工智能未来</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://block-maze.io/user07" title="区块链迷宫" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_007.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="区块链迷宫" />
+      </div>
+      <div class="flink-item-name">区块链迷宫</div>
+      <div class="flink-item-desc" title="数字货币探险家">数字货币探险家</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://open-source.cloud/user08" title="开源星云" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_008.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="开源星云" />
+      </div>
+      <div class="flink-item-name">开源星云</div>
+      <div class="flink-item-desc" title="共享代码之光">共享代码之光</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://qa-zone.test/user09" title="测试禁地" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_009.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="测试禁地" />
+      </div>
+      <div class="flink-item-name">测试禁地</div>
+      <div class="flink-item-desc" title="BUG狩猎专家">BUG狩猎专家</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://cybersec-house.org/user10" title="网络安全屋" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_010.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="网络安全屋" />
+      </div>
+      <div class="flink-item-name">网络安全屋</div>
+      <div class="flink-item-desc" title="防火墙艺术家">防火墙艺术家</div>
+    </a>
+  </div></div><h2 id="文创森林-✒️"><a href="#文创森林-✒️" class="headerlink" title="文创森林 ✒️"></a>文创森林 ✒️</h2><div class="flink-desc">文字工作者的秘密花园</div> <div class="flink-list">
+  <div class="flink-list-item">
+    <a href="https://ink-word.art/user11" title="墨语书房" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_011.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="墨语书房" />
+      </div>
+      <div class="flink-item-name">墨语书房</div>
+      <div class="flink-item-desc" title="每天3000字践行者">每天3000字践行者</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://pixel-poet.net/user12" title="像素诗人" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_012.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="像素诗人" />
+      </div>
+      <div class="flink-item-name">像素诗人</div>
+      <div class="flink-item-desc" title="用代码写十四行诗">用代码写十四行诗</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://fragment-lab.com/user13" title="断章研究所" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_013.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="断章研究所" />
+      </div>
+      <div class="flink-item-name">断章研究所</div>
+      <div class="flink-item-desc" title="碎片化写作实验">碎片化写作实验</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://steam-pen.net/user14" title="蒸汽笔迹" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_014.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="蒸汽笔迹" />
+      </div>
+      <div class="flink-item-name">蒸汽笔迹</div>
+      <div class="flink-item-desc" title="复古未来主义创作">复古未来主义创作</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://fantasy-archives.cc/user15" title="奇幻档案" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_015.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="奇幻档案" />
+      </div>
+      <div class="flink-item-name">奇幻档案</div>
+      <div class="flink-item-desc" title="架空世界建造指南">架空世界建造指南</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://stream-conscious.work/user16" title="意识流车间" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_016.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="意识流车间" />
+      </div>
+      <div class="flink-item-name">意识流车间</div>
+      <div class="flink-item-desc" title="梦境记录仪">梦境记录仪</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://niche-topic.store/user17" title="冷题材仓库" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_017.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="冷题材仓库" />
+      </div>
+      <div class="flink-item-name">冷题材仓库</div>
+      <div class="flink-item-desc" title="冷门知识收藏家">冷门知识收藏家</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://poetry-reactor.net/user18" title="诗歌反应堆" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_018.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="诗歌反应堆" />
+      </div>
+      <div class="flink-item-name">诗歌反应堆</div>
+      <div class="flink-item-desc" title="分行文字核聚变">分行文字核聚变</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://diary-excavate.com/user19" title="日记考古" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_019.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="日记考古" />
+      </div>
+      <div class="flink-item-name">日记考古</div>
+      <div class="flink-item-desc" title="个人史挖掘现场">个人史挖掘现场</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://font-museum.design/user20" title="字型博物馆" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_020.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="字型博物馆" />
+      </div>
+      <div class="flink-item-name">字型博物馆</div>
+      <div class="flink-item-desc" title="活字印刷复兴运动">活字印刷复兴运动</div>
+    </a>
+  </div></div><h2 id="光影结界-📷"><a href="#光影结界-📷" class="headerlink" title="光影结界 📷"></a>光影结界 📷</h2><div class="flink-desc">镜头里的平行宇宙</div> <div class="flink-list">
+  <div class="flink-list-item">
+    <a href="https://lens-universe.net/user21" title="快门迷宫" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_021.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="快门迷宫" />
+      </div>
+      <div class="flink-item-name">快门迷宫</div>
+      <div class="flink-item-desc" title="城市街拍症候群">城市街拍症候群</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://film-salvager.com/user22" title="胶片拾荒者" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_022.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="胶片拾荒者" />
+      </div>
+      <div class="flink-item-name">胶片拾荒者</div>
+      <div class="flink-item-desc" title="过期胶卷复活计划">过期胶卷复活计划</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://star-dark.room/user23" title="星空暗房" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_023.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="星空暗房" />
+      </div>
+      <div class="flink-item-name">星空暗房</div>
+      <div class="flink-item-desc" title="捕捉光年之外">捕捉光年之外</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://macro-cosmos.org/user24" title="微距宇宙" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_024.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="微距宇宙" />
+      </div>
+      <div class="flink-item-name">微距宇宙</div>
+      <div class="flink-item-desc" title="一滴水里的世界">一滴水里的世界</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://ruins-explore.club/user25" title="废墟探险" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_025.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="废墟探险" />
+      </div>
+      <div class="flink-item-name">废墟探险</div>
+      <div class="flink-item-desc" title="被遗忘的角落">被遗忘的角落</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://portrait-lab.net/user26" title="人像实验室" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_026.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="人像实验室" />
+      </div>
+      <div class="flink-item-name">人像实验室</div>
+      <div class="flink-item-desc" title="灵魂显影术">灵魂显影术</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://film-diary.net/user27" title="胶片日记" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_027.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="胶片日记" />
+      </div>
+      <div class="flink-item-name">胶片日记</div>
+      <div class="flink-item-desc" title="用光书写日常">用光书写日常</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://negative-reverse.com/user28" title="负片反转" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_028.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="负片反转" />
+      </div>
+      <div class="flink-item-name">负片反转</div>
+      <div class="flink-item-desc" title="颠覆视觉惯性">颠覆视觉惯性</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://snapshot-archaeology.com/user29" title="快照考古" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_029.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="快照考古" />
+      </div>
+      <div class="flink-item-name">快照考古</div>
+      <div class="flink-item-desc" title="老照片复活指南">老照片复活指南</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://light-graffiti.art/user30" title="光迹涂鸦" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_030.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="光迹涂鸦" />
+      </div>
+      <div class="flink-item-name">光迹涂鸦</div>
+      <div class="flink-item-desc" title="用光作画的人">用光作画的人</div>
+    </a>
+  </div></div><h2 id="二次元结界-🌸"><a href="#二次元结界-🌸" class="headerlink" title="二次元结界 🌸"></a>二次元结界 🌸</h2><div class="flink-desc">跨次元同好会</div> <div class="flink-list">
+  <div class="flink-list-item">
+    <a href="https://anime-archives.net/user31" title="番剧考古" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_031.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="番剧考古" />
+      </div>
+      <div class="flink-item-name">番剧考古</div>
+      <div class="flink-item-desc" title="经典动画修复计划">经典动画修复计划</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://pixel-dimension.net/user32" title="像素结界" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_032.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="像素结界" />
+      </div>
+      <div class="flink-item-name">像素结界</div>
+      <div class="flink-item-desc" title="点阵图研究所">点阵图研究所</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://seiyuu-star.sky/user33" title="声优星空" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_033.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="声优星空" />
+      </div>
+      <div class="flink-item-name">声优星空</div>
+      <div class="flink-item-desc" title="声音魔法解析">声音魔法解析</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://figure-museum.com/user34" title="手办陈列馆" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_034.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="手办陈列馆" />
+      </div>
+      <div class="flink-item-name">手办陈列馆</div>
+      <div class="flink-item-desc" title="立体化收藏家">立体化收藏家</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://doujin-galaxy.org/user35" title="同人星系" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_035.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="同人星系" />
+      </div>
+      <div class="flink-item-name">同人星系</div>
+      <div class="flink-item-desc" title="平行世界创造者">平行世界创造者</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://moe-observatory.net/user36" title="萌系观测站" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_036.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="萌系观测站" />
+      </div>
+      <div class="flink-item-name">萌系观测站</div>
+      <div class="flink-item-desc" title="可爱能量分析">可爱能量分析</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://mecha-lab.org/user37" title="机甲研究所" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_037.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="机甲研究所" />
+      </div>
+      <div class="flink-item-name">机甲研究所</div>
+      <div class="flink-item-desc" title="机械构造美学">机械构造美学</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://fantasy-beast.guide/user38" title="幻想生物图鉴" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_038.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="幻想生物图鉴" />
+      </div>
+      <div class="flink-item-name">幻想生物图鉴</div>
+      <div class="flink-item-desc" title="虚构物种档案馆">虚构物种档案馆</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://storyboard-lib.com/user39" title="动画分镜库" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_039.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="动画分镜库" />
+      </div>
+      <div class="flink-item-name">动画分镜库</div>
+      <div class="flink-item-desc" title="镜头语言解析">镜头语言解析</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://anime-pilgrimage.travel/user40" title="圣地巡礼" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_040.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="圣地巡礼" />
+      </div>
+      <div class="flink-item-name">圣地巡礼</div>
+      <div class="flink-item-desc" title="二次元朝圣指南">二次元朝圣指南</div>
+    </a>
+  </div></div><h2 id="独立游戏屋-🎮"><a href="#独立游戏屋-🎮" class="headerlink" title="独立游戏屋 🎮"></a>独立游戏屋 🎮</h2><div class="flink-desc">第九艺术创想空间</div> <div class="flink-list">
+  <div class="flink-list-item">
+    <a href="https://pixel-crafter.games/user41" title="像素工匠" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_041.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="像素工匠" />
+      </div>
+      <div class="flink-item-name">像素工匠</div>
+      <div class="flink-item-desc" title="点阵图游戏开发">点阵图游戏开发</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://story-maze.games/user42" title="剧情迷宫" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_042.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="剧情迷宫" />
+      </div>
+      <div class="flink-item-name">剧情迷宫</div>
+      <div class="flink-item-desc" title="多分支叙事实验">多分支叙事实验</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://indie-daily.news/user43" title="独立游戏日报" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_043.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="独立游戏日报" />
+      </div>
+      <div class="flink-item-name">独立游戏日报</div>
+      <div class="flink-item-desc" title="每日游戏速递">每日游戏速递</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://ost-library.com/user44" title="游戏原声带" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_044.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="游戏原声带" />
+      </div>
+      <div class="flink-item-name">游戏原声带</div>
+      <div class="flink-item-desc" title="游戏音乐收藏">游戏音乐收藏</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://physics-sandbox.io/user45" title="物理沙盒" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_045.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="物理沙盒" />
+      </div>
+      <div class="flink-item-name">物理沙盒</div>
+      <div class="flink-item-desc" title="实时物理模拟器">实时物理模拟器</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://retro-game.cabin/user46" title="复古游戏舱" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_046.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="复古游戏舱" />
+      </div>
+      <div class="flink-item-name">复古游戏舱</div>
+      <div class="flink-item-desc" title="80年代游戏怀旧">80年代游戏怀旧</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://game-design.mind/user47" title="游戏设计思维" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_047.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="游戏设计思维" />
+      </div>
+      <div class="flink-item-name">游戏设计思维</div>
+      <div class="flink-item-desc" title="机制与乐趣分析">机制与乐趣分析</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://vr-dream.builder/user48" title="VR造梦者" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_048.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="VR造梦者" />
+      </div>
+      <div class="flink-item-name">VR造梦者</div>
+      <div class="flink-item-desc" title="沉浸式体验设计">沉浸式体验设计</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://game-test.zone/user49" title="游戏测试区" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_049.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="游戏测试区" />
+      </div>
+      <div class="flink-item-name">游戏测试区</div>
+      <div class="flink-item-desc" title="BUG狩猎战场">BUG狩猎战场</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://ludology-philo.space/user50" title="游戏哲学" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_050.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="游戏哲学" />
+      </div>
+      <div class="flink-item-name">游戏哲学</div>
+      <div class="flink-item-desc" title="玩的本质研究">玩的本质研究</div>
+    </a>
+  </div></div><h2 id="旅行虫洞-🌍"><a href="#旅行虫洞-🌍" class="headerlink" title="旅行虫洞 🌍"></a>旅行虫洞 🌍</h2><div class="flink-desc">地平线外的故事</div> <div class="flink-list">
+  <div class="flink-list-item">
+    <a href="https://highway-poem.travel/user51" title="公路诗篇" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_051.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="公路诗篇" />
+      </div>
+      <div class="flink-item-name">公路诗篇</div>
+      <div class="flink-item-desc" title="车轮上的史诗">车轮上的史诗</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://bnb-lab.net/user52" title="民宿研究所" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_052.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="民宿研究所" />
+      </div>
+      <div class="flink-item-name">民宿研究所</div>
+      <div class="flink-item-desc" title="特色住宿体验">特色住宿体验</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://secret-place.map/user53" title="秘境地图" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_053.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="秘境地图" />
+      </div>
+      <div class="flink-item-name">秘境地图</div>
+      <div class="flink-item-desc" title="冷门目的地探索">冷门目的地探索</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://train-diaries.com/user54" title="火车漫记" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_054.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="火车漫记" />
+      </div>
+      <div class="flink-item-name">火车漫记</div>
+      <div class="flink-item-desc" title="铁轨上的慢旅行">铁轨上的慢旅行</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://wild-calling.org/user55" title="野性召唤" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_055.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="野性召唤" />
+      </div>
+      <div class="flink-item-name">野性召唤</div>
+      <div class="flink-item-desc" title="荒野求生指南">荒野求生指南</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://food-expedition.guide/user56" title="美食远征" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_056.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="美食远征" />
+      </div>
+      <div class="flink-item-name">美食远征</div>
+      <div class="flink-item-desc" title="为吃远行">为吃远行</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://urban-section.net/user57" title="城市断面" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_057.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="城市断面" />
+      </div>
+      <div class="flink-item-name">城市断面</div>
+      <div class="flink-item-desc" title="垂直空间考古">垂直空间考古</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://hiker-talks.trek/user58" title="徒步者说" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_058.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="徒步者说" />
+      </div>
+      <div class="flink-item-name">徒步者说</div>
+      <div class="flink-item-desc" title="用脚丈量世界">用脚丈量世界</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://diving-log.book/user59" title="潜水日志" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_059.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="潜水日志" />
+      </div>
+      <div class="flink-item-name">潜水日志</div>
+      <div class="flink-item-desc" title="蓝色星球笔记">蓝色星球笔记</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://aurora-hunter.club/user60" title="极光猎人" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_060.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="极光猎人" />
+      </div>
+      <div class="flink-item-name">极光猎人</div>
+      <div class="flink-item-desc" title="追逐绿色魅影">追逐绿色魅影</div>
+    </a>
+  </div></div><h2 id="学术圣殿-📚"><a href="#学术圣殿-📚" class="headerlink" title="学术圣殿 📚"></a>学术圣殿 📚</h2><div class="flink-desc">知识边界开拓者</div> <div class="flink-list">
+  <div class="flink-list-item">
+    <a href="https://paper-tunnel.ac/user61" title="文献隧道" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_061.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="文献隧道" />
+      </div>
+      <div class="flink-item-name">文献隧道</div>
+      <div class="flink-item-desc" title="论文精读指南">论文精读指南</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://academic-cafe.org/user62" title="学术咖啡" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_062.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="学术咖啡" />
+      </div>
+      <div class="flink-item-name">学术咖啡</div>
+      <div class="flink-item-desc" title="研究室生存法则">研究室生存法则</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://research-note.lab/user63" title="科研手记" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_063.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="科研手记" />
+      </div>
+      <div class="flink-item-name">科研手记</div>
+      <div class="flink-item-desc" title="实验室生存日志">实验室生存日志</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://scholar-translate.net/user64" title="学术翻译" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_064.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="学术翻译" />
+      </div>
+      <div class="flink-item-name">学术翻译</div>
+      <div class="flink-item-desc" title="跨越语言障碍">跨越语言障碍</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://datavis-art.com/user65" title="数据可视化" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_065.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="数据可视化" />
+      </div>
+      <div class="flink-item-name">数据可视化</div>
+      <div class="flink-item-desc" title="让数据讲故事">让数据讲故事</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://scicomm.blog/user66" title="科学传播" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_066.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="科学传播" />
+      </div>
+      <div class="flink-item-name">科学传播</div>
+      <div class="flink-item-desc" title="破圈的科学声音">破圈的科学声音</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://antique-restore.org/user67" title="古籍修复" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_067.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="古籍修复" />
+      </div>
+      <div class="flink-item-name">古籍修复</div>
+      <div class="flink-item-desc" title="时间对抗者">时间对抗者</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://field-work.ethno/user68" title="田野调查" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_068.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="田野调查" />
+      </div>
+      <div class="flink-item-name">田野调查</div>
+      <div class="flink-item-desc" title="在场的人类学">在场的人类学</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://academic-integrity.watch/user69" title="学术不端监测" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_069.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="学术不端监测" />
+      </div>
+      <div class="flink-item-name">学术不端监测</div>
+      <div class="flink-item-desc" title="捍卫研究纯洁性">捍卫研究纯洁性</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://interdisciplinary.lab/user70" title="跨学科实验室" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_070.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="跨学科实验室" />
+      </div>
+      <div class="flink-item-name">跨学科实验室</div>
+      <div class="flink-item-desc" title="学科边界溶解">学科边界溶解</div>
+    </a>
+  </div></div><h2 id="音乐粒子-🎵"><a href="#音乐粒子-🎵" class="headerlink" title="音乐粒子 🎵"></a>音乐粒子 🎵</h2><div class="flink-desc">声波振动频率</div> <div class="flink-list">
+  <div class="flink-list-item">
+    <a href="https://vinyl-universe.music/user71" title="黑胶宇宙" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_071.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="黑胶宇宙" />
+      </div>
+      <div class="flink-item-name">黑胶宇宙</div>
+      <div class="flink-item-desc" title="模拟声波收藏">模拟声波收藏</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://indie-sound.wall/user72" title="独立音墙" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_072.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="独立音墙" />
+      </div>
+      <div class="flink-item-name">独立音墙</div>
+      <div class="flink-item-desc" title="小众音乐雷达">小众音乐雷达</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://electron-cloud.audio/user73" title="电子云" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_073.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="电子云" />
+      </div>
+      <div class="flink-item-name">电子云</div>
+      <div class="flink-item-desc" title="数字声音实验">数字声音实验</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://instrument-museum.world/user74" title="乐器博物馆" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_074.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="乐器博物馆" />
+      </div>
+      <div class="flink-item-name">乐器博物馆</div>
+      <div class="flink-item-desc" title="声音考古学">声音考古学</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://compose-algorithm.ai/user75" title="作曲算法" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_075.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="作曲算法" />
+      </div>
+      <div class="flink-item-name">作曲算法</div>
+      <div class="flink-item-desc" title="AI生成音乐">AI生成音乐</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://music-therapy.care/user76" title="音乐疗愈" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_076.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="音乐疗愈" />
+      </div>
+      <div class="flink-item-name">音乐疗愈</div>
+      <div class="flink-item-desc" title="声音处方签">声音处方签</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://live-recording.studio/user77" title="现场录音" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_077.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="现场录音" />
+      </div>
+      <div class="flink-item-name">现场录音</div>
+      <div class="flink-item-desc" title="捕捉空气震动">捕捉空气震动</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://sheet-music.lib/user78" title="乐谱图书馆" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_078.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="乐谱图书馆" />
+      </div>
+      <div class="flink-item-name">乐谱图书馆</div>
+      <div class="flink-item-desc" title="可视化声音">可视化声音</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://acoustic-engineering.tech/user79" title="声学工程" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_079.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="声学工程" />
+      </div>
+      <div class="flink-item-name">声学工程</div>
+      <div class="flink-item-desc" title="完美声场追求">完美声场追求</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://music-psychology.lab/user80" title="音乐心理学" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_080.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="音乐心理学" />
+      </div>
+      <div class="flink-item-name">音乐心理学</div>
+      <div class="flink-item-desc" title="为什么我们爱音乐">为什么我们爱音乐</div>
+    </a>
+  </div></div><h2 id="极客乐园-🚀"><a href="#极客乐园-🚀" class="headerlink" title="极客乐园 🚀"></a>极客乐园 🚀</h2><div class="flink-desc">硬核技术探索者</div> <div class="flink-list">
+  <div class="flink-list-item">
+    <a href="https://steam-gear.tech/user81" title="机械怀表" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_081.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="机械怀表" />
+      </div>
+      <div class="flink-item-name">机械怀表</div>
+      <div class="flink-item-desc" title="蒸汽朋克手作实验室">蒸汽朋克手作实验室</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://mars-code.net/user82" title="火星代码" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_082.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="火星代码" />
+      </div>
+      <div class="flink-item-name">火星代码</div>
+      <div class="flink-item-desc" title="星际编程语言研究">星际编程语言研究</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://quantum-tea.house/user83" title="量子茶室" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_083.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="量子茶室" />
+      </div>
+      <div class="flink-item-name">量子茶室</div>
+      <div class="flink-item-desc" title="并行宇宙通信实验">并行宇宙通信实验</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://open-hardware.io/user84" title="开源硬件" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_084.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="开源硬件" />
+      </div>
+      <div class="flink-item-name">开源硬件</div>
+      <div class="flink-item-desc" title="可复制技术蓝图">可复制技术蓝图</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://3d-print.workshop/user85" title="3D打印工坊" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_085.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="3D打印工坊" />
+      </div>
+      <div class="flink-item-name">3D打印工坊</div>
+      <div class="flink-item-desc" title="从建模到实体化">从建模到实体化</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://circuit-poem.org/user86" title="电路诗歌" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_086.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="电路诗歌" />
+      </div>
+      <div class="flink-item-name">电路诗歌</div>
+      <div class="flink-item-desc" title="电子元件美学">电子元件美学</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://hardware-extreme.net/user87" title="硬件极限" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_087.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="硬件极限" />
+      </div>
+      <div class="flink-item-name">硬件极限</div>
+      <div class="flink-item-desc" title="性能压榨艺术">性能压榨艺术</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://terminal-aesthetic.dev/user88" title="终端美学" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_088.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="终端美学" />
+      </div>
+      <div class="flink-item-name">终端美学</div>
+      <div class="flink-item-desc" title="命令行界面艺术">命令行界面艺术</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://server-farm.tech/user89" title="服务器农场" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_089.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="服务器农场" />
+      </div>
+      <div class="flink-item-name">服务器农场</div>
+      <div class="flink-item-desc" title="机柜里的生命体">机柜里的生命体</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://algorithm-gallery.art/user90" title="算法画廊" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_090.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="算法画廊" />
+      </div>
+      <div class="flink-item-name">算法画廊</div>
+      <div class="flink-item-desc" title="可视化计算之美">可视化计算之美</div>
+    </a>
+  </div></div><h2 id="生活杂货铺-🛍️"><a href="#生活杂货铺-🛍️" class="headerlink" title="生活杂货铺 🛍️"></a>生活杂货铺 🛍️</h2><div class="flink-desc">日常中的小确幸</div> <div class="flink-list">
+  <div class="flink-list-item">
+    <a href="https://caffeine-lab.life/user91" title="咖啡因研究" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_091.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="咖啡因研究" />
+      </div>
+      <div class="flink-item-name">咖啡因研究</div>
+      <div class="flink-item-desc" title="全球精品咖啡笔记">全球精品咖啡笔记</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://plant-diary.green/user92" title="绿植日记" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_092.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="绿植日记" />
+      </div>
+      <div class="flink-item-name">绿植日记</div>
+      <div class="flink-item-desc" title="与植物的共生生活">与植物的共生生活</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://stationery-lab.net/user93" title="文具研究所" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_093.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="文具研究所" />
+      </div>
+      <div class="flink-item-name">文具研究所</div>
+      <div class="flink-item-desc" title="书写工具百科全书">书写工具百科全书</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://bullet-journal.space/user94" title="手帐宇宙" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_094.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="手帐宇宙" />
+      </div>
+      <div class="flink-item-name">手帐宇宙</div>
+      <div class="flink-item-desc" title="时间管理美学">时间管理美学</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://kitchen-chemistry.cook/user95" title="厨房化学" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_095.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="厨房化学" />
+      </div>
+      <div class="flink-item-name">厨房化学</div>
+      <div class="flink-item-desc" title="分子料理实验室">分子料理实验室</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://cleaning-ritual.life/user96" title="清洁仪式" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_096.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="清洁仪式" />
+      </div>
+      <div class="flink-item-name">清洁仪式</div>
+      <div class="flink-item-desc" title="扫除中的禅意">扫除中的禅意</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://cat-language.decode/user97" title="喵语解析" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_097.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="喵语解析" />
+      </div>
+      <div class="flink-item-name">喵语解析</div>
+      <div class="flink-item-desc" title="猫行为学研究日志">猫行为学研究日志</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://sleep-science.org/user98" title="睡眠科学" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_098.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="睡眠科学" />
+      </div>
+      <div class="flink-item-name">睡眠科学</div>
+      <div class="flink-item-desc" title="梦境控制实验">梦境控制实验</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://urban-foraging.city/user99" title="城市采集" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_099.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="城市采集" />
+      </div>
+      <div class="flink-item-name">城市采集</div>
+      <div class="flink-item-desc" title="都市自然探索">都市自然探索</div>
+    </a>
+  </div>
+  <div class="flink-list-item">
+    <a href="https://zero-waste.life/user100" title="零浪费生活" target="_blank">
+      <div class="flink-item-icon">
+        <img class="no-lightbox" src="/img/link_avatar_100.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="零浪费生活" />
+      </div>
+      <div class="flink-item-name">零浪费生活</div>
+      <div class="flink-item-desc" title="可持续生活方式">可持续生活方式</div>
+    </a>
+  </div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/%E5%A4%B4%E5%83%8F.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">一个未来大神</div><div class="author-info-description">没事爱折腾</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/"><i class="fab fa-github"></i><span>点击查看博主秘密🛴</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:wenchuan.developer@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">本网站仅用于自己学习使用。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/10/15/%E5%91%A8%E6%9C%AB%E5%BE%92%E6%AD%A5%E8%A3%85%E5%A4%87%E6%B8%85%E5%8D%95/" title="周末徒步装备清单"><img src="https://source.fomal.cc/img/default_cover_8.webp" onerror="this.onerror=null;this.src='/img/err_cove.png'" alt="周末徒步装备清单"/></a><div class="content"><a class="title" href="/2025/10/15/%E5%91%A8%E6%9C%AB%E5%BE%92%E6%AD%A5%E8%A3%85%E5%A4%87%E6%B8%85%E5%8D%95/" title="周末徒步装备清单">周末徒步装备清单</a><time datetime="2025-10-15T04:40:19.000Z" title="发表于 2025-10-15 12:40:19">2025-10-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/09/22/%E5%AE%B6%E5%BA%AD%E7%BB%BF%E6%A4%8D%E5%85%BB%E6%8A%A4%E6%8C%87%E5%8D%97/" title="家庭绿植养护指南"><img src="https://source.fomal.cc/img/default_cover_6.webp" onerror="this.onerror=null;this.src='/img/err_cove.png'" alt="家庭绿植养护指南"/></a><div class="content"><a class="title" href="/2025/09/22/%E5%AE%B6%E5%BA%AD%E7%BB%BF%E6%A4%8D%E5%85%BB%E6%8A%A4%E6%8C%87%E5%8D%97/" title="家庭绿植养护指南">家庭绿植养护指南</a><time datetime="2025-09-22T07:10:27.000Z" title="发表于 2025-09-22 15:10:27">2025-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/09/12/%E4%B8%9C%E4%BA%AC%E8%87%AA%E7%94%B1%E8%A1%8C%E7%BE%8E%E9%A3%9F%E5%9C%B0%E5%9B%BE/" title="东京自由行美食地图"><img src="https://source.fomal.cc/img/default_cover_5.webp" onerror="this.onerror=null;this.src='/img/err_cove.png'" alt="东京自由行美食地图"/></a><div class="content"><a class="title" href="/2025/09/12/%E4%B8%9C%E4%BA%AC%E8%87%AA%E7%94%B1%E8%A1%8C%E7%BE%8E%E9%A3%9F%E5%9C%B0%E5%9B%BE/" title="东京自由行美食地图">东京自由行美食地图</a><time datetime="2025-09-12T08:45:11.000Z" title="发表于 2025-09-12 16:45:11">2025-09-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/08/30/React%20Hooks%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/" title="React Hooks深度解析"><img src="https://source.fomal.cc/img/default_cover_10.webp" onerror="this.onerror=null;this.src='/img/err_cove.png'" alt="React Hooks深度解析"/></a><div class="content"><a class="title" href="/2025/08/30/React%20Hooks%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/" title="React Hooks深度解析">React Hooks深度解析</a><time datetime="2025-08-30T05:25:14.000Z" title="发表于 2025-08-30 13:25:14">2025-08-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/08/18/Docker%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97/" title="Docker容器化部署指南"><img src="https://source.fomal.cc/img/default_cover_9.webp" onerror="this.onerror=null;this.src='/img/err_cove.png'" alt="Docker容器化部署指南"/></a><div class="content"><a class="title" href="/2025/08/18/Docker%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97/" title="Docker容器化部署指南">Docker容器化部署指南</a><time datetime="2025-08-18T03:20:45.000Z" title="发表于 2025-08-18 11:20:45">2025-08-18</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%93%E4%B8%9A%E6%8A%80%E8%83%BD/"><span class="card-category-list-name">专业技能</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%BA%E7%94%9F%E7%AE%A1%E7%90%86/"><span class="card-category-list-name">人生管理</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD/"><span class="card-category-list-name">兴趣爱好</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%B7%A5%E4%BD%9C%E7%BB%8F%E5%8E%86/"><span class="card-category-list-name">工作经历</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%A1%86%E6%9E%B6%E7%9F%A5%E8%AF%86/"><span class="card-category-list-name">框架知识</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%BB%8F%E5%8E%86%E6%84%9F%E6%82%9F/"><span class="card-category-list-name">经历感悟</span><span class="card-category-list-count">2</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%9B%A2%E9%98%9F%E7%AE%A1%E7%90%86/" style="font-size: 1.1em; color: #999">团队管理</a> <a href="/tags/%E5%AE%B6%E5%B1%85/" style="font-size: 1.1em; color: #999">家居</a> <a href="/tags/%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" style="font-size: 1.1em; color: #999">状态管理</a> <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 1.1em; color: #999">旅行</a> <a href="/tags/RESTful/" style="font-size: 1.1em; color: #999">RESTful</a> <a href="/tags/CI-CD/" style="font-size: 1.1em; color: #999">CI/CD</a> <a href="/tags/%E6%91%84%E5%BD%B1/" style="font-size: 1.1em; color: #999">摄影</a> <a href="/tags/%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87/" style="font-size: 1.1em; color: #999">效率提升</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F/" style="font-size: 1.1em; color: #999">生活方式</a> <a href="/tags/%E8%A3%85%E5%A4%87%E6%8C%87%E5%8D%97/" style="font-size: 1.1em; color: #999">装备指南</a> <a href="/tags/%E5%AE%B9%E5%99%A8%E5%8C%96/" style="font-size: 1.1em; color: #999">容器化</a> <a href="/tags/%E7%BE%8E%E9%A3%9F/" style="font-size: 1.1em; color: #999">美食</a> <a href="/tags/JavaScript/" style="font-size: 1.1em; color: #999">JavaScript</a> <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" style="font-size: 1.1em; color: #999">微服务</a> <a href="/tags/Java/" style="font-size: 1.1em; color: #999">Java</a> <a href="/tags/%E6%97%A5%E6%9C%AC/" style="font-size: 1.1em; color: #999">日本</a> <a href="/tags/%E5%87%8F%E5%8E%8B/" style="font-size: 1.1em; color: #999">减压</a> <a href="/tags/%E5%81%A5%E5%BA%B7/" style="font-size: 1.1em; color: #999">健康</a> <a href="/tags/%E6%B2%9F%E9%80%9A%E6%8A%80%E5%B7%A7/" style="font-size: 1.1em; color: #999">沟通技巧</a> <a href="/tags/DevOps/" style="font-size: 1.1em; color: #999">DevOps</a> <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%8D%8F%E4%BD%9C/" style="font-size: 1.1em; color: #999">远程协作</a> <a href="/tags/%E6%95%B0%E5%AD%97%E6%B8%B8%E6%B0%91/" style="font-size: 1.1em; color: #999">数字游民</a> <a href="/tags/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87/" style="font-size: 1.1em; color: #999">工作效率</a> <a href="/tags/Hooks/" style="font-size: 1.1em; color: #999">Hooks</a> <a href="/tags/React/" style="font-size: 1.1em; color: #999">React</a> <a href="/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" style="font-size: 1.1em; color: #999">项目管理</a> <a href="/tags/%E6%88%B7%E5%A4%96%E8%BF%90%E5%8A%A8/" style="font-size: 1.1em; color: #999">户外运动</a> <a href="/tags/%E6%96%87%E5%8C%96%E4%BD%93%E9%AA%8C/" style="font-size: 1.1em; color: #999">文化体验</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.1em; color: #999">前端</a> <a href="/tags/SpringBoot/" style="font-size: 1.5em; color: #99a9bf">SpringBoot</a> <a href="/tags/%E5%9B%AD%E8%89%BA/" style="font-size: 1.1em; color: #999">园艺</a> <a href="/tags/aaa/" style="font-size: 1.1em; color: #999">aaa</a> <a href="/tags/%E8%87%AA%E7%84%B6/" style="font-size: 1.1em; color: #999">自然</a> <a href="/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/" style="font-size: 1.1em; color: #999">云计算</a> <a href="/tags/Docker/" style="font-size: 1.1em; color: #999">Docker</a> <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%8A%9E%E5%85%AC/" style="font-size: 1.1em; color: #999">远程办公</a> <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" style="font-size: 1.1em; color: #999">后端开发</a> <a href="/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/" style="font-size: 1.1em; color: #999">时间管理</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/10/">
+            <span class="card-archive-list-date">
+              十月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/09/">
+            <span class="card-archive-list-date">
+              九月 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/08/">
+            <span class="card-archive-list-date">
+              八月 2025
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/07/">
+            <span class="card-archive-list-date">
+              七月 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">9</div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-07-22T14:46:26.431Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;2025 By 一个未来大神</span></div><div class="footer_custom_text">I wish you to become your own sun, no need to rely on who's light.<p><a target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a> &nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Vervel-brightgreen?style=flat&logo=Vercel" title="本站采用双线部署，默认线路托管于Vercel"></a>&nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio" title="本站采用双线部署，联通线路托管于Coding"></a>&nbsp;<a target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://mistyalgo.github.io/categories/专业技能/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📚 小黎の开挂时间 (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://mistyalgo.github.io/categories/工作经历/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🎮 小黎の求生之路 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://mistyalgo.github.io/categories/框架知识/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🐱‍👓 小黎の框架开发 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://mistyalgo.github.io/categories/兴趣爱好/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">👩‍💻 小黎の娱乐时间 (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://mistyalgo.github.io/categories/人生管理/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📒 小黎の自控管理 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://mistyalgo.github.io/categories/经历感悟/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">💡 小黎の胡思乱想 (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="https://mistyalgo.github.io/categories" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(33.333333333333336% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: #b30070}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/07/28/高效团队协作的7个习惯/" alt=""><img width="48" height="48" src="https://source.fomal.cc/img/default_cover_2.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-07-28</span><a class="blog-slider__title" href="2025/07/28/高效团队协作的7个习惯/" alt="">高效团队协作的7个习惯</a><div class="blog-slider__text">提升团队生产力的实用指南</div><a class="blog-slider__button" href="2025/07/28/高效团队协作的7个习惯/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/08/30/React Hooks深度解析/" alt=""><img width="48" height="48" src="https://source.fomal.cc/img/default_cover_10.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-08-30</span><a class="blog-slider__title" href="2025/08/30/React Hooks深度解析/" alt="">React Hooks深度解析</a><div class="blog-slider__text">现代前端开发必备技能</div><a class="blog-slider__button" href="2025/08/30/React Hooks深度解析/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/08/18/Docker容器化部署指南/" alt=""><img width="48" height="48" src="https://source.fomal.cc/img/default_cover_9.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-08-18</span><a class="blog-slider__title" href="2025/08/18/Docker容器化部署指南/" alt="">Docker容器化部署指南</a><div class="blog-slider__text">从开发到生产的容器化实践</div><a class="blog-slider__button" href="2025/08/18/Docker容器化部署指南/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/07/22/hello word/" alt=""><img width="48" height="48" src="/img/cove_5.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-07-22</span><a class="blog-slider__title" href="2025/07/22/hello word/" alt="">SpringBoot</a><div class="blog-slider__text">欢迎页的描述</div><a class="blog-slider__button" href="2025/07/22/hello word/" alt="">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><!-- hexo injector body_end end --></body></html>
